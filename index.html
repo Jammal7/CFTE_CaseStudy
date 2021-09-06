@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <title>Test</title>
+    <style>
+        *{
+            font-family: "Poppins", sans-serif;
+        }
+        .nav-bar{
+            background-color: black;
+            padding: 20px 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-bar-details{
+            display: flex;
+            align-items: center;
+            vertical-align: middle;
+        }
+        .nav-bar-details .logo{
+            margin-right: 48.19px;
+        }
+        .nav-bar-details span{
+            color: white;
+            margin-right: 8px;
+        }
+        .nav-bar-auth button{
+            padding: 8px 24px;
+            outline: none;
+            border-radius: 7px;
+            font-size: 18px;
+            color: white;
+            cursor: pointer;
+        }
+        .nav-bar-auth .login{
+            border: 1px solid white;
+            margin-right: 8px;
+            background-color: transparent;
+        }
+        .nav-bar-auth .signup{
+            border-color: transparent;
+            background-color: #F11625;
+        }
+        .body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .members{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 46px;
+            line-height: 69px;
+            margin-bottom: 18px;
+        }
+        .time-frame{
+            display: flex;
+            margin-bottom: 24px;
+        }
+        .time-frame div{
+            padding: 8px 53.62px;
+            color: #F11625;
+            font-size: 18px;
+            border-radius : 0px 4px 4px 0px;
+            border: 0.1px solid #DCDCDC;
+            border-left: none;
+            cursor: pointer;
+        }
+        .time-frame div:first-child{
+            background: #F11625;
+            border: none;
+            border-radius: 4px 0px 0px 4px;
+            color: white;
+        }
+        .content{
+            max-width: 693px;
+            border: 1px solid #DCDCDC;
+            border-radius: 16px 16px 0px 0px;
+            border-top: 44px solid #F11625;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 32px 48px;
+        }
+        .content h2{
+            font-weight: 600;
+            font-size: 93px;
+            line-height: 40px;
+            margin-bottom: 12px;
+        }
+        .content .month{
+            color: #F11625;
+            font-size: 15px;
+        }
+        .content .unlimited{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 22px;
+        }
+        .content ul li{
+            background: url('./check.png') no-repeat left center;
+            padding: 5px 10px 5px 25px;
+            list-style: none;
+            margin: 0;
+            position: relative;
+            right: 25px;
+            vertical-align: middle;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 22px;
+        }
+        .content .join{
+            text-align: center;
+        }
+        .content .join button{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            padding: 8px 24px;
+            outline: none;
+            cursor: pointer;
+            color: white;
+            background-color: #F11625;
+            border: none;
+            border-radius: 4px;
+        }
+        .short-line{
+            width: 40px;
+            height: 8px;
+            background-color: #F11625;
+            border: none;
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+<body>
+    <header class="nav-bar">
+        <div class="nav-bar-details">
+            <img src="./logo.png" alt="logo" class="logo" />
+            <span>Explore</span> <img src="./vec.png"/>
+        </div>
+        <div class="nav-bar-auth">
+            <button class="login">
+                Log In
+            </button>
+            <button class="signup">
+                Sign Up
+            </button>
+        </div>
+    </header>
+    <div class="body">
+        <h3 class="members">Memberships</h3>
+        <hr class="short-line"/>
+        <div class="time-frame">
+            <div>
+                Annual
+            </div>
+            <div>
+                Monthly
+            </div>
+        </div>
+        <div class="content">
+            <h2>
+                39.99
+            </h2>
+            <p class="month">/month</p>
+            <div>
+                <p class="unlimited">Get unlimited access to:</p>
+                <ul>
+                    <li>50+ courses about Fintech, AI, Blockchain.</li>
+                    <li>6 learning pathways, a series of short courses to achieve fast career progression in any field.</li>
+                    <li>Shareable LinkedIn badges to boost your employability and credibility in finance.</li>
+                    <li>One of the largest Fintech events directory to find and explore events that fits with your career goals and Member-only Fintech events organised by leading institutions.</li>
+                    <li>25+ recorded events, webinars and keynotes from the fintech ecosystem, presented by experts from HSBC, Prudentials, Monetary Authority of Singapore and more.</li>
+                    <li>Direct discussions with experts through forums, as well as industry networking with like-minded professionals.</li>
+                    <li>A weekly newsletter curating the latest news about Fintech, with expert articles and tips.</li>
+                </ul>
+                <div class="join">
+                    <button>Join Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
